@@ -1,5 +1,5 @@
 class ProdutoICMS
-  
+
   # - Tipo de Tributacao (seleciona de lista) - ICMS_TIPOS_TRIBUTACAO
   attr_accessor :tipo_tributacao
 

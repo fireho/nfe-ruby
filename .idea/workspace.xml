@@ -24,28 +24,10 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="produto.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/entidades/produto.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="emitente.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/entidades/emitente.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="59" column="0" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cliente.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/entidades/cliente.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="3" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.96234775">
+            <state line="19" column="0" selection-start="465" selection-end="465" vertical-scroll-proportion="0.35769656">
               <folding />
             </state>
           </provider>
@@ -67,9 +49,9 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/lib/entidades/produto_icms.rb" />
-        <option value="$PROJECT_DIR$/lib/entidades/cliente.rb" />
         <option value="$PROJECT_DIR$/lib/entidades/produto.rb" />
         <option value="$PROJECT_DIR$/lib/entidades/emitente.rb" />
+        <option value="$PROJECT_DIR$/lib/entidades/cliente.rb" />
       </list>
     </option>
   </component>
@@ -158,8 +140,8 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="com.intellij.profile.codeInspection.ui.PlatformInspectionsConfigurable" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
@@ -204,7 +186,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="1" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -258,28 +240,26 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lib/entidades/produto_icms.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="2" selection-start="20" selection-end="20" vertical-scroll-proportion="0.018826135">
+        <state line="1" column="2" selection-start="20" selection-end="20" vertical-scroll-proportion="0.018826135" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/entidades/emitente.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="23" selection-start="509" selection-end="509" vertical-scroll-proportion="0.1904762">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/entidades/produto.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/entidades/emitente.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="59" column="0" selection-start="1179" selection-end="1179" vertical-scroll-proportion="0.0">
+        <state line="2" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.018826135">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/entidades/cliente.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="3" selection-start="1238" selection-end="1238" vertical-scroll-proportion="0.96234775">
+        <state line="19" column="0" selection-start="465" selection-end="465" vertical-scroll-proportion="0.35769656">
           <folding />
         </state>
       </provider>
