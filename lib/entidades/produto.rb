@@ -51,7 +51,7 @@ class Produto
   attr_accessor :ipi_cnpj_produtor
 
   def initialize
-    icms = []
+    @icms = []
   end
 
 end

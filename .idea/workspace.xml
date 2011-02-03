@@ -24,21 +24,16 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="cliente.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/entidades/cliente.rb">
+      <file leaf-file-name="produto.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/entidades/produto.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="0" selection-start="465" selection-end="465" vertical-scroll-proportion="0.35769656">
+            <state line="52" column="16" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.7552602">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
-  </component>
-  <component name="FindManager">
-    <FindUsagesManager>
-      <setting name="OPEN_NEW_TAB" value="false" />
-    </FindUsagesManager>
   </component>
   <component name="Git.Settings">
     <option name="GIT_EXECUTABLE" value="git.exe" />
@@ -49,9 +44,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/lib/entidades/produto_icms.rb" />
-        <option value="$PROJECT_DIR$/lib/entidades/produto.rb" />
         <option value="$PROJECT_DIR$/lib/entidades/emitente.rb" />
         <option value="$PROJECT_DIR$/lib/entidades/cliente.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/lib/entidades/produto.rb" />
       </list>
     </option>
   </component>
@@ -133,6 +129,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nfe-ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nfe-ruby" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="arquivos" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -187,13 +201,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="1" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24907652" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24907652" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -243,23 +257,30 @@
         <state line="1" column="2" selection-start="20" selection-end="20" vertical-scroll-proportion="0.018826135" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/entidades/emitente.rb">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="23" selection-start="509" selection-end="509" vertical-scroll-proportion="0.1904762">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/entidades/produto.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.018826135">
+        <state line="14" column="5" selection-start="90" selection-end="90" vertical-scroll-proportion="0.2635659">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/entidades/cliente.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="465" selection-end="465" vertical-scroll-proportion="0.35769656">
+        <state line="3" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.056478404">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/entidades/emitente.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="0" selection-start="37" selection-end="37" vertical-scroll-proportion="0.056478404">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/entidades/produto.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="16" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.7552602">
           <folding />
         </state>
       </provider>

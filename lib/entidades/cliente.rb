@@ -1,5 +1,7 @@
+require 'parametros'
+
 class Cliente
-  # Dados do Cliente
+
   # - Nome/Razão Social (obrigatorio)
   attr_accessor :razao_social
 
@@ -47,13 +49,13 @@ class Cliente
   attr_accessor :endereco_telefone
 
   def initialize
-    isento_icms   = false
-    endereco_pais = CODIGO_BRASIL
-    tipo_documento= 'CNPJ'
+    @isento_icms   = false
+    @endereco_pais = Parametros::CODIGO_BRASIL
+    @tipo_documento= 'CNPJ'
   end
 
   def to_s
-    "#{tipo_documento numero_documento}"
+    "#{@tipo_documento} #{@numero_documento}"
   end
 
 end

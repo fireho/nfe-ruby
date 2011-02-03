@@ -1,6 +1,6 @@
+require 'parametros'
+
 class Emitente
-
-
   # - Nome/Razao Social (obrigatorio)
   attr_accessor :razao_social
 
@@ -54,10 +54,10 @@ class Emitente
   attr_accessor :logotipo
 
   def initialize
-    endereco_pais = CODIGO_BRASIL
+    @endereco_pais = Parametros::CODIGO_BRASIL
   end
 
   def to_s
-    cnpj
+    @cnpj
   end
 end
