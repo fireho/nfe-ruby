@@ -13,6 +13,7 @@
            xmlns="http://www.portalfiscal.inf.br/nfe" targetNamespace="http://www.portalfiscal.inf.br/nfe"
            elementFormDefault="qualified" attributeFormDefault="unqualified">
   <xs:import namespace="http://www.w3.org/2000/09/xmldsig#" schemaLocation="xmldsig-core-schema_v1.01.xsd"/>
+
   <xs:include schemaLocation="tiposBasico_v1.03.xsd"/>
   <xs:complexType name="TNFe">
     <xs:annotation>
@@ -5321,6 +5322,7 @@
       </xs:element>
     </xs:sequence>
   </xs:complexType>
+
   <xs:simpleType name="TCfop">
     <xs:annotation>
       <xs:documentation>Tipo CFOP // maio/2009 - Atualização do Ajuste SINIEF 14/2009</xs:documentation>

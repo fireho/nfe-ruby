@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/lib/arquivos/PL_006g/NFE.yml" line="0" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8fac4917-0b4a-48ea-98f7-87361194283f" name="Default" comment="" />
     <ignored path="nfe-ruby.iws" />
@@ -24,16 +27,130 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" showNonProject="false" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="produto.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/lib/entidades/produto.rb">
+      <file leaf-file-name="parametros.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/parametros/parametros.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="16" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.7552602">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="leiauteNFe_v2.00.xsd" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/leiauteNFe_v2.00.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5323" column="19" selection-start="311466" selection-end="311466" vertical-scroll-proportion="0.50830567">
+              <folding>
+                <element signature="tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#1;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#2;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#3;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#4;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#5;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#6;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#7;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#8;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#9;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#10;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#11;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#12;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:element#13;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:attribute#1;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:complexType#1;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:complexType#2;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:complexType#3;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:complexType#4;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:complexType#5;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:complexType#6;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:complexType#7;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:complexType#8;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:complexType#9;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:complexType#10;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#1;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#2;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#3;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#4;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#5;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#6;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#7;tag#xs:schema#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tiposBasico_v1.03.xsd" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/tiposBasico_v1.03.xsd">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="51" column="20" selection-start="2346" selection-end="2346" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="tag#xs:simpleType#0;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#1;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#2;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#3;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#4;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#5;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#6;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#7;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#8;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#9;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#10;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#11;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#12;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#13;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#14;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#15;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#16;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#17;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#18;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#19;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#20;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#21;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#22;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#23;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#24;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#25;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#26;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#27;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#28;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#29;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#30;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#31;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#32;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#33;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#34;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#35;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#36;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#37;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#38;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#39;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#40;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#41;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#42;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#43;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#44;tag#xs:schema#0" expanded="false" />
+                <element signature="tag#xs:simpleType#45;tag#xs:schema#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="emitente.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/entidades/emitente.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="17" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
   </component>
   <component name="Git.Settings">
     <option name="GIT_EXECUTABLE" value="git.exe" />
@@ -48,6 +165,8 @@
         <option value="$PROJECT_DIR$/lib/entidades/cliente.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/lib/entidades/produto.rb" />
+        <option value="$PROJECT_DIR$/lib/arquivos/PL_006g/leiauteNFe_v2.00.xsd" />
+        <option value="$PROJECT_DIR$/lib/arquivos/PL_006g/NFE.yml" />
       </list>
     </option>
   </component>
@@ -77,7 +196,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Favorites" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -146,16 +264,21 @@
               <option name="myItemId" value="arquivos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PL_006g" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.lastSelected" value="com.intellij.profile.codeInspection.ui.PlatformInspectionsConfigurable" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="RubyRunConfigurationType" factoryName="Ruby">
@@ -200,7 +323,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="1" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -259,29 +382,148 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="5" selection-start="90" selection-end="90" vertical-scroll-proportion="0.2635659">
-          <folding />
-        </state>
+        <state line="14" column="5" selection-start="90" selection-end="90" vertical-scroll-proportion="0.2635659" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/entidades/cliente.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.056478404">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/entidades/emitente.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="37" selection-end="37" vertical-scroll-proportion="0.056478404">
-          <folding />
-        </state>
+        <state line="3" column="0" selection-start="36" selection-end="36" vertical-scroll-proportion="0.056478404" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/entidades/produto.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="16" selection-start="1082" selection-end="1082" vertical-scroll-proportion="0.7552602">
+        <state line="28" column="0" selection-start="552" selection-end="552" vertical-scroll-proportion="0.303433" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/cancNFe_v2.00.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="47" selection-start="404" selection-end="404" vertical-scroll-proportion="0.05730337" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/entidades/emitente.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="17" selection-start="299" selection-end="299" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/leiauteConsStatServ_v2.00.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.9168539">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/nfe_v2.00.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/parametros/parametros.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/tiposBasico_v1.03.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="20" selection-start="2346" selection-end="2346" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="tag#xs:simpleType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#1;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#2;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#3;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#4;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#5;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#6;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#7;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#8;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#9;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#10;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#11;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#12;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#13;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#14;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#15;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#16;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#17;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#18;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#19;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#20;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#21;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#22;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#23;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#24;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#25;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#26;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#27;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#28;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#29;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#30;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#31;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#32;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#33;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#34;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#35;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#36;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#37;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#38;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#39;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#40;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#41;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#42;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#43;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#44;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#45;tag#xs:schema#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/NFE.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="514" column="0" selection-start="16976" selection-end="16976" vertical-scroll-proportion="2.4119601">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/leiauteNFe_v2.00.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5323" column="19" selection-start="311466" selection-end="311466" vertical-scroll-proportion="0.50830567">
+          <folding>
+            <element signature="tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#1;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#2;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#3;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#4;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#5;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#6;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#7;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#8;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#9;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#10;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#11;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#12;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#13;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:attribute#1;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#1;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#2;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#3;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#4;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#5;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#6;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#7;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#8;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#9;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#10;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#1;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#2;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#3;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#4;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#5;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#6;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#7;tag#xs:schema#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
