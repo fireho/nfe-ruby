@@ -1,29 +1,29 @@
 class Transportadora
-  
-  # - Nome/Razão Social (obrigatorio)
-  attr_accessor :razao_social
 
-  # - Tipo de Documento (obrigatorio) - default CNPJ
-  attr_accessor :tipo_documento
+    # - Nome/Razão Social (obrigatorio)
+    attr_accessor :razao_social
 
-  # - Numero do Documento (obrigatorio)
-  attr_accessor :numero_documento
+    # - Tipo de Documento (obrigatorio) - default CNPJ
+    attr_accessor :tipo_documento
 
-  # - Inscricao Estadual
-  attr_accessor :inscricao_estadual
+    # - Numero do Documento (obrigatorio)
+    attr_accessor :numero_documento
 
-  # Endereco
-  # - Logradouro (obrigatorio)
-  attr_accessor :endereco_logradouro
+    # - Inscricao Estadual
+    attr_accessor :inscricao_estadual
 
-  # - UF (obrigatorio)
-  attr_accessor :endereco_uf
+    # Endereco
+    # - Logradouro (obrigatorio)
+    attr_accessor :endereco_logradouro
 
-  # - Municipio (obrigatorio)
-  attr_accessor :endereco_municipio
+    # - UF (obrigatorio)
+    attr_accessor :endereco_uf
 
-  def to_s
-    "#{@tipo_documento} #{@numero_documento}"
-  end
-  
+    # - Municipio (obrigatorio)
+    attr_accessor :endereco_municipio
+
+    def to_s
+        "#{@tipo_documento} #{@numero_documento}"
+    end
+
 end
