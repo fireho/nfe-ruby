@@ -36,10 +36,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="leiauteNFe_v2.00.xsd" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="leiauteNFe_v2.00.xsd" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/leiauteNFe_v2.00.xsd">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5323" column="19" selection-start="311466" selection-end="311466" vertical-scroll-proportion="0.50830567">
+            <state line="5323" column="19" selection-start="311466" selection-end="311466" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
                 <element signature="tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
@@ -83,7 +83,7 @@
       <file leaf-file-name="tiposBasico_v1.03.xsd" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/tiposBasico_v1.03.xsd">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="20" selection-start="2346" selection-end="2346" vertical-scroll-proportion="0.0">
+            <state line="61" column="5" selection-start="2640" selection-end="2641" vertical-scroll-proportion="-5.678571">
               <folding>
                 <element signature="tag#xs:simpleType#0;tag#xs:schema#0" expanded="false" />
                 <element signature="tag#xs:simpleType#1;tag#xs:schema#0" expanded="false" />
@@ -132,6 +132,15 @@
                 <element signature="tag#xs:simpleType#44;tag#xs:schema#0" expanded="false" />
                 <element signature="tag#xs:simpleType#45;tag#xs:schema#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NFE.yml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/NFE.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="151" column="0" selection-start="4782" selection-end="4782" vertical-scroll-proportion="0.3782857">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -424,9 +433,51 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/leiauteNFe_v2.00.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5323" column="19" selection-start="311466" selection-end="311466" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#1;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#2;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#3;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#4;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#5;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#6;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#7;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#8;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#9;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#10;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#11;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#12;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:element#13;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:attribute#1;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#1;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#2;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#3;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#4;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#5;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#6;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#7;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#8;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#9;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:complexType#10;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#0;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#1;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#2;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#3;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#4;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#5;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#6;tag#xs:schema#0" expanded="false" />
+            <element signature="tag#xs:simpleType#7;tag#xs:schema#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/tiposBasico_v1.03.xsd">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="20" selection-start="2346" selection-end="2346" vertical-scroll-proportion="0.0">
+        <state line="61" column="5" selection-start="2640" selection-end="2641" vertical-scroll-proportion="-5.678571">
           <folding>
             <element signature="tag#xs:simpleType#0;tag#xs:schema#0" expanded="false" />
             <element signature="tag#xs:simpleType#1;tag#xs:schema#0" expanded="false" />
@@ -480,50 +531,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/NFE.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="514" column="0" selection-start="16976" selection-end="16976" vertical-scroll-proportion="2.4119601">
+        <state line="151" column="0" selection-start="4782" selection-end="4782" vertical-scroll-proportion="0.3782857">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/arquivos/PL_006g/leiauteNFe_v2.00.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5323" column="19" selection-start="311466" selection-end="311466" vertical-scroll-proportion="0.50830567">
-          <folding>
-            <element signature="tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#1;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#2;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#3;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#4;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#5;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#6;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#7;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#8;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#9;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#10;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#11;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#12;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:element#13;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:attribute#1;tag#xs:complexType#0;tag#xs:element#0;tag#xs:sequence#0;tag#xs:complexType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:complexType#1;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:complexType#2;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:complexType#3;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:complexType#4;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:complexType#5;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:complexType#6;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:complexType#7;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:complexType#8;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:complexType#9;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:complexType#10;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:simpleType#0;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:simpleType#1;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:simpleType#2;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:simpleType#3;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:simpleType#4;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:simpleType#5;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:simpleType#6;tag#xs:schema#0" expanded="false" />
-            <element signature="tag#xs:simpleType#7;tag#xs:schema#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
