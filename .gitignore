@@ -12,11 +12,14 @@ tmtags
 
 ## VIM
 *.swp
-.idea
 
 ## PROJECT::GENERAL
 coverage
 rdoc
 pkg
+
+## IDEA
+\.idea
+.idea
 
 ## PROJECT::SPECIFIC
