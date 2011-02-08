@@ -1,5 +1,6 @@
 require 'configuracao/parametros'
 require 'active_model'
+
 class Cliente
     include ActiveModel::Serializers::JSON
     include ActiveModel::Serializers::Xml
