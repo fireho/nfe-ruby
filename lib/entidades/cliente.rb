@@ -1,60 +1,72 @@
-require 'parametros'
-
+require 'configuracao/parametros'
+require 'active_model'
 class Cliente
-  # - Nome/Razão Social (obrigatorio)
-  attr_accessor :razao_social
+    include ActiveModel::Serializers::JSON
+    include ActiveModel::Serializers::Xml
 
-  # - Tipo de Documento (obrigatorio) - default CNPJ - TIPOS_DOCUMENTO
-  attr_accessor :tipo_documento
 
-  # - Numero do Documento (obrigatorio)
-  attr_accessor :numero_documento
+    # - Nome/Razão Social (obrigatorio)
+    attr_accessor :razao_social
 
-  # - Inscricao Estadual
-  attr_accessor :inscricao_estadual
+    # - Tipo de Documento (obrigatorio) - default CNPJ - TIPOS_DOCUMENTO
+    attr_accessor :tipo_documento
 
-  # - Inscricao SUFRAMA
-  attr_accessor :inscricao_suframa
+    # - Numero do Documento (obrigatorio)
+    attr_accessor :numero_documento
 
-  # - Isento do ICMS (Sim/Nao)
-  attr_accessor :isento_icms
+    # - Inscricao Estadual
+    attr_accessor :inscricao_estadual
 
-  # Endereco
-  # - Logradouro (obrigatorio)
-  attr_accessor :endereco_logradouro
+    # - Inscricao SUFRAMA
+    attr_accessor :inscricao_suframa
 
-  # - Numero (obrigatorio)
-  attr_accessor :endereco_numero
+    # - Isento do ICMS (Sim/Nao)
+    attr_accessor :isento_icms
 
-  # - Complemento
-  attr_accessor :endereco_complemento
+    # Endereco
+    # - Logradouro (obrigatorio)
+    attr_accessor :endereco_logradouro
 
-  # - Bairro (obrigatorio)
-  attr_accessor :endereco_bairro
+    # - Numero (obrigatorio)
+    attr_accessor :endereco_numero
 
-  # - CEP
-  attr_accessor :endereco_cep
+    # - Complemento
+    attr_accessor :endereco_complemento
 
-  # - Pais (seleciona de lista)
-  attr_accessor :endereco_pais
+    # - Bairro (obrigatorio)
+    attr_accessor :endereco_bairro
 
-  # - UF (obrigatorio)
-  attr_accessor :endereco_uf
+    # - CEP
+    attr_accessor :endereco_cep
 
-  # - Municipio (obrigatorio)
-  attr_accessor :endereco_municipio
+    # - Pais (seleciona de lista)
+    attr_accessor :endereco_pais
 
-  # - Telefone
-  attr_accessor :endereco_telefone
+    # - UF (obrigatorio)
+    attr_accessor :endereco_uf
 
-  def initialize
-    @isento_icms   = false
-    @endereco_pais = Parametros::CODIGO_BRASIL
-    @tipo_documento= 'CNPJ'
-  end
+    # - Municipio (obrigatorio)
+    attr_accessor :endereco_municipio
 
-  def to_s
-    "#{@tipo_documento} #{@numero_documento}"
-  end
+    # - Telefone
+    attr_accessor :endereco_telefone
+
+    def initialize
+        @isento_icms   = false
+        @endereco_pais = Parametros::CODIGO_BRASIL
+        @tipo_documento= 'CNPJ'
+    end
+
+    def to_s
+        "#{@tipo_documento} #{@numero_documento}"
+    end
+
+    def attributes#FIXME pensar em como pegar os atributos direto, isso se tiver jeito
+        #atributos = self.public_methods.map{ |metodo| metodo if metodo.include? '=' }
+        #atributos.each {|att| att.to_s.gsub('=', '')}
+        #@attributes = atributos
+        @attributes = {'endereco_municipio'=> endereco_municipio, 'endereco_uf' => endereco_uf}
+    end
+
 
 end

@@ -1,0 +1,514 @@
+-TNFE
+ -infNFe
+  -ide
+  -emit
+  -avulsa
+  -dest
+  -retirada
+  -entrega
+  -det
+  -total
+  -transp
+  -cobr
+  -infAdic
+  -exporta
+  -compra
+  -cana
+  -Id
+  -ds:Signature
+
+
+-TProtNFe
+ -infProt">
+  -tpAmb" type="TAmb">
+               <xs:documentation>Identificação do Ambiente:
+                 1 - Produção
+                 2 - Homologação
+               </xs:documentation>
+  -verAplic" type="TVerAplic">
+  -chNFe" type="TChNFe">
+  -dhRecbto" type="xs:dateTime">
+  -nProt" type="TProt" minOccurs="0">
+               <xs:documentation>Número do Protocolo de Status da NF-e. 1 posição (1 – Secretaria de Fazenda Estadual 2
+                 – Receita Federal); 2 - códiga da UF - 2 posições ano; 10 seqüencial no ano.
+               </xs:documentation>
+  -"digVal" type="ds:DigestValueType" minOccurs="0">
+  -cStat" type="TStat">
+  -xMotivo" type="TMotivo">
+  -Id" type="xs:ID" use="optional"/>
+  -versao" type="TVerNFe" use="required"/>
+
+
+-TEnviNFe
+  -idLote" type="TIdLote"/>
+  -NFe" type="TNFe" maxOccurs="50"/>
+  -versao" type="TVerNFe" use="required"/>
+
+
+-TRetEnviNFe
+  -tpAmb" type="TAmb">
+  -verAplic" type="TVerAplic">
+  -cStat" type="TStat">
+  -xMotivo" type="TMotivo">
+  -cUF" type="TCodUfIBGE">
+  -dhRecbto" type="xs:dateTime">
+  -infRec" minOccurs="0"
+      -nRec" type="TRec">
+      -tMed" type="TMed">
+  -versao type="TVerNFe" use="required"/>
+
+-TConsReciNFe">
+  -tpAmb" type="TAmb">
+  -nRec" type="TRec"
+  -versao" type="TVerNFe" use="required"/>
+
+    <xs:complexType name="TRetConsReciNFe">
+      <xs:annotation>
+        <xs:documentation>Tipo Retorno do Pedido de Consulta do Recido do Lote de Notas Fiscais Eletrônicas
+        </xs:documentation>
+      </xs:annotation>
+      <xs:sequence>
+        <xs:element name="tpAmb" type="TAmb">
+          <xs:annotation>
+            <xs:documentation>Identificação do Ambiente:
+              1 - Produção
+              2 - Homologação
+            </xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="verAplic" type="TVerAplic">
+          <xs:annotation>
+            <xs:documentation>Versão do Aplicativo que processou a NF-e</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="nRec" type="TRec">
+          <xs:annotation>
+            <xs:documentation>Número do Recibo Consultado</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="cStat" type="TStat">
+          <xs:annotation>
+            <xs:documentation>Código do status da mensagem enviada.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="xMotivo" type="TMotivo">
+          <xs:annotation>
+            <xs:documentation>Descrição literal do status do serviço solicitado.</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="cUF" type="TCodUfIBGE">
+          <xs:annotation>
+            <xs:documentation>código da UF de atendimento</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:sequence minOccurs="0">
+          <xs:element name="cMsg">
+            <xs:annotation>
+              <xs:documentation>Código da Mensagem (v2.0)
+                Campo de uso da SEFAZ para enviar mensagem de interesse da SEFAZ para o emissor.
+              </xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:whiteSpace value="preserve"/>
+                <xs:pattern value="[0-9]{4}"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+          <xs:element name="xMsg">
+            <xs:annotation>
+              <xs:documentation>Mensagem da SEFAZ para o emissor. (v2.0)</xs:documentation>
+            </xs:annotation>
+            <xs:simpleType>
+              <xs:restriction base="TString">
+                <xs:minLength value="1"/>
+                <xs:maxLength value="200"/>
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+        </xs:sequence>
+        <xs:element name="protNFe" type="TProtNFe" minOccurs="0" maxOccurs="50">
+          <xs:annotation>
+            <xs:documentation>Protocolo de status resultado do processamento da NF-e</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="versao" type="TVerNFe" use="required"/>
+    </xs:complexType>
+
+
+
+  <xs:complexType name="TNfeProc">
+    <xs:annotation>
+      <xs:documentation>Tipo da NF-e processada</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="NFe" type="TNFe"/>
+      <xs:element name="protNFe" type="TProtNFe"/>
+    </xs:sequence>
+    <xs:attribute name="versao" type="TVerNFe" use="required"/>
+  </xs:complexType>
+
+
+
+  <xs:complexType name="TEndereco">
+    <xs:annotation>
+      <xs:documentation>Tipo Dados do Endereço // 24/10/08 - tamanho mínimo</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="xLgr">
+        <xs:annotation>
+          <xs:documentation>Logradouro</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="nro">
+        <xs:annotation>
+          <xs:documentation>Número</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="xCpl" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Complemento</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="xBairro">
+        <xs:annotation>
+          <xs:documentation>Bairro</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="cMun" type="TCodMunIBGE">
+        <xs:annotation>
+          <xs:documentation>Código do município (utilizar a tabela do IBGE), informar 9999999 para operações com o
+            exterior.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="xMun">
+        <xs:annotation>
+          <xs:documentation>Nome do município, informar EXTERIOR para operações com o exterior.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="UF" type="TUf">
+        <xs:annotation>
+          <xs:documentation>Sigla da UF, informar EX para operações com o exterior.</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CEP" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>CEP</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:whiteSpace value="preserve"/>
+            <xs:pattern value="[0-9]{8}"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="cPais" type="Tpais" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Código do país</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="xPais" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Nome do país</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="fone" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Telefone, preencher com Código DDD + número do telefone , nas operações com exterior é
+            permtido informar o código do país + código da localidade + número do telefone
+          </xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:whiteSpace value="preserve"/>
+            <xs:pattern value="[0-9]{6,14}"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+
+
+  <xs:complexType name="TEnderEmi">
+    <xs:annotation>
+      <xs:documentation>Tipo Dados do Endereço do Emitente // 24/10/08 - desmembrado / tamanho mínimo</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="xLgr">
+        <xs:annotation>
+          <xs:documentation>Logradouro</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="nro">
+        <xs:annotation>
+          <xs:documentation>Número</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="xCpl" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Complemento</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="xBairro">
+        <xs:annotation>
+          <xs:documentation>Bairro</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="cMun" type="TCodMunIBGE">
+        <xs:annotation>
+          <xs:documentation>Código do município (utilizar a tabela do IBGE), informar 9999999 para operações com o
+            exterior.
+          </xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="xMun">
+        <xs:annotation>
+          <xs:documentation>Nome do município, informar EXTERIOR para operações com o exterior.</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="UF" type="TUfEmi">
+        <xs:annotation>
+          <xs:documentation>Sigla da UF</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="CEP" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>CEP</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:whiteSpace value="preserve"/>
+            <xs:pattern value="[0-9]{8}"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="cPais" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Código do país</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:enumeration value="1058"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="xPais" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Nome do país</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:enumeration value="Brasil"/>
+            <xs:enumeration value="BRASIL"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="fone" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Preencher com Código DDD + número do telefone (v.2.0)</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:whiteSpace value="preserve"/>
+            <xs:pattern value="[0-9]{6,14}"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+
+
+  <xs:complexType name="TLocal">
+    <xs:annotation>
+      <xs:documentation>Tipo Dados do Local de Retirada ou Entrega // 24/10/08 - tamanho mínimo // v2.0
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:choice>
+        <xs:element name="CNPJ" type="TCnpjOpc">
+          <xs:annotation>
+            <xs:documentation>CNPJ</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+        <xs:element name="CPF" type="TCpf">
+          <xs:annotation>
+            <xs:documentation>CPF (v2.0)</xs:documentation>
+          </xs:annotation>
+        </xs:element>
+      </xs:choice>
+      <xs:element name="xLgr">
+        <xs:annotation>
+          <xs:documentation>Logradouro</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="nro">
+        <xs:annotation>
+          <xs:documentation>Número</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="xCpl" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Complemento</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="xBairro">
+        <xs:annotation>
+          <xs:documentation>Bairro</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="1"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="cMun" type="TCodMunIBGE">
+        <xs:annotation>
+          <xs:documentation>Código do município (utilizar a tabela do IBGE)</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="xMun">
+        <xs:annotation>
+          <xs:documentation>Nome do município</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:maxLength value="60"/>
+            <xs:minLength value="2"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="UF" type="TUf">
+        <xs:annotation>
+          <xs:documentation>Sigla da UF</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+
+
+
+  <xs:complexType name="TVeiculo">
+    <xs:annotation>
+      <xs:documentation>Tipo Dados do Veículo</xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="placa">
+        <xs:annotation>
+          <xs:documentation>Placa do veículo</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="xs:string">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="8"/>
+            <xs:whiteSpace value="preserve"/>
+            <xs:pattern value="[A-Z0-9]+"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+      <xs:element name="UF" type="TUf">
+        <xs:annotation>
+          <xs:documentation>Sigla da UF</xs:documentation>
+        </xs:annotation>
+      </xs:element>
+      <xs:element name="RNTC" minOccurs="0">
+        <xs:annotation>
+          <xs:documentation>Registro Nacional de Transportador de Carga (ANTT)</xs:documentation>
+        </xs:annotation>
+        <xs:simpleType>
+          <xs:restriction base="TString">
+            <xs:minLength value="1"/>
+            <xs:maxLength value="20"/>
+          </xs:restriction>
+        </xs:simpleType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>

@@ -1,30 +1,30 @@
 class ProdutoICMS
-  
-  # - Tipo de Tributacao (seleciona de lista) - ICMS_TIPOS_TRIBUTACAO
-  attr_accessor :tipo_tributacao
 
-  # - Origem (seleciona de lista) - ICMS_ORIGENS
-  attr_accessor :origem
+    # - Tipo de Tributacao (seleciona de lista) - ICMS_TIPOS_TRIBUTACAO
+    attr_accessor :tipo_tributacao
 
-  # - Modalidade de determinacao da Base de Calculo (seleciona de lista) - ICMS_MODALIDADES
-  attr_accessor :modalidade
+    # - Origem (seleciona de lista) - ICMS_ORIGENS
+    attr_accessor :origem
 
-  # - Aliquota ICMS
-  attr_accessor :aliquota
+    # - Modalidade de determinacao da Base de Calculo (seleciona de lista) - ICMS_MODALIDADES
+    attr_accessor :modalidade
 
-  # - Percentual de reducao da Base de Calculo
-  attr_accessor :percentual_reducao
+    # - Aliquota ICMS
+    attr_accessor :aliquota
 
-  # - Modalidade de determinacao da Base de Calculo do ICMS ST (seleciona de lista) - ICMS_MODALIDADES
-  attr_accessor :st_modalidade
+    # - Percentual de reducao da Base de Calculo
+    attr_accessor :percentual_reducao
 
-  # - Aliquota ICMS ST
-  attr_accessor :st_aliquota
+    # - Modalidade de determinacao da Base de Calculo do ICMS ST (seleciona de lista) - ICMS_MODALIDADES
+    attr_accessor :st_modalidade
 
-  # - Percentual de reducao do ICMS ST
-  attr_accessor :st_percentual_reducao
+    # - Aliquota ICMS ST
+    attr_accessor :st_aliquota
 
-  # - Percentual da margem de Valor Adicionado ICMS ST
-  attr_accessor :st_percentual_margem_valor_adicionado
+    # - Percentual de reducao do ICMS ST
+    attr_accessor :st_percentual_reducao
+
+    # - Percentual da margem de Valor Adicionado ICMS ST
+    attr_accessor :st_percentual_margem_valor_adicionado
 
 end
