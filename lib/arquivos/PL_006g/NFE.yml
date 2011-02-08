@@ -1,19 +1,1243 @@
 -TNFE
  -infNFe
   -ide
+    -cUF" type="TCodUfIBGE">
+    -cNF">
+    -natOp">
+    -indPag">
+    -mod" type="TMod">
+    -serie" type="TSerie">
+    -nNF" type="TNF">
+    -dEmi" type="TData">
+    -dSaiEnt" type="TData" minOccurs="0">
+    -hSaiEnt" type="TTime" minOccurs="0">
+    -tpNF">
+    -cMunFG" type="TCodMunIBGE">
+    -NFref" minOccurs="0" maxOccurs="unbounded">
+          -refNFe" type="TChNFe">
+          -refNF">
+                -cUF" type="TCodUfIBGE">
+                -AAMM">
+                -CNPJ" type="TCnpj">
+                -mod">
+                -serie" type="TSerie">
+                -nNF" type="TNF">
+          -refNFP">
+                -cUF" type="TCodUfIBGE">
+                -AAMM">
+                  -CNPJ" type="TCnpj">
+                  -CPF" type="TCpf">
+                -IE" type="TIeDest">
+                -mod">
+                -serie" type="TSerie">
+                -nNF" type="TNF">
+          -refCTe" type="TChNFe">
+          -refECF">
+                -mod">
+                -nECF">
+                -nCOO">
+    -tpImp">
+    -tpEmis">
+    -cDV">
+    -tpAmb" type="TAmb">
+    -finNFe" type="TFinNFe">
+    -procEmi" type="TProcEmi">
+    -verProc">
+      -dhCont">
+      -xJust">
+
   -emit
+                      <xs:choice>
+                        -CNPJ" type="TCnpj">
+                        -CPF" type="TCpf">
+                      </xs:choice>
+                      -xNome">
+                      -xFant" minOccurs="0">
+                      -enderEmit" type="TEnderEmi">
+                      -IE" type="TIe">
+                      -IEST" type="TIeST" minOccurs="0">
+                        -IM">
+                        -CNAE">
+                      -CRT">
+
   -avulsa
+              -avulsa" minOccurs="0">
+                    -CNPJ" type="TCnpj">
+                    -xOrgao">
+                    -matr">
+                    -xAgente">
+                    -fone">
+                    -UF" type="TUfEmi">
+                    -nDAR">
+                    -dEmi" type="TData">
+                    -vDAR" type="TDec_1302">
+                    -repEmi">
+                    -dPag" type="TData" minOccurs="0">
+
+
   -dest
+                    <xs:choice>
+                      -CNPJ" type="TCnpjOpc">
+                      -CPF" type="TCpf">
+                    </xs:choice>
+                    -xNome">
+                    -enderDest" type="TEndereco">
+                    -IE" type="TIeDest">
+                    -ISUF" minOccurs="0">
+                    -email" minOccurs="0">
+
   -retirada
+              -retirada" type="TLocal" minOccurs="0">
+
   -entrega
+              -entrega" type="TLocal" minOccurs="0">
+
   -det
+            -det" maxOccurs="990">
+                  -prod">
+                        -cProd">
+                        -cEAN">
+                        -xProd">
+                        -NCM">
+                        -EXTIPI" minOccurs="0">
+                        -CFOP" type="TCfop">
+                        -uCom">
+                        -qCom" type="TDec_1504">
+                        -vUnCom" type="TDec_1110">
+                        -vProd" type="TDec_1302">
+                        -cEANTrib">
+                        -uTrib">
+                        -qTrib" type="TDec_1504">
+                        -vUnTrib" type="TDec_1110">
+                        -vFrete" type="TDec_1302Opc" minOccurs="0">
+                        -vSeg" type="TDec_1302Opc" minOccurs="0">
+                        -vDesc" type="TDec_1302Opc" minOccurs="0">
+                        -vOutro" type="TDec_1302Opc" minOccurs="0">
+                        -indTot">
+                        -DI" minOccurs="0" maxOccurs="unbounded">
+                              -nDI">
+                              -dDI" type="TData">
+                              -xLocDesemb">
+                              -UFDesemb" type="TUfEmi">
+                              -dDesemb" type="TData">
+                              -cExportador">
+                              -adi" maxOccurs="unbounded">
+                                    -nAdicao">
+                                    -nSeqAdic">
+                                    -cFabricante">
+                                    -vDescDI" type="TDec_1302Opc" minOccurs="0">
+                        -xPed" minOccurs="0">
+                        -nItemPed" minOccurs="0">
+                          -veicProd">
+                                -tpOp">
+                                -chassi">
+                                -cCor">
+                                -xCor">
+                                -pot">
+                                -cilin">
+                                -pesoL">
+                                -pesoB">
+                                -nSerie">
+                                -tpComb">
+                                -nMotor">
+                                -CMT">
+                                -dist">
+                                -anoMod">
+                                -anoFab">
+                                -tpPint">
+                                -tpVeic">
+                                -espVeic">
+                                -VIN">
+                                -condVeic">
+                                -cMod">
+                                -cCorDENATRAN">
+                                -lota">
+                                -tpRest">
+                          -med" maxOccurs="unbounded">
+                                -nLote">
+                                -qLote" type="TDec_0803">
+                                -dFab" type="TData">
+                                -dVal" type="TData">
+                                -vPMC" type="TDec_1302">
+                          -arma" maxOccurs="unbounded">
+                                -tpArma">
+                                -nSerie">
+                                -nCano">
+                                -descr">
+                          -comb">
+                                -cProdANP">
+                                -CODIF" minOccurs="0">
+                                -qTemp" type="TDec_1204Opc" minOccurs="0">
+                                -UFCons" type="TUf">
+                                -CIDE" minOccurs="0">
+                                      -qBCProd" type="TDec_1204">
+                                      -vAliqProd" type="TDec_1104">
+                                      -vCIDE" type="TDec_1302">
+                  -imposto">
+                            -ICMS">
+                                  -ICMS00">
+                                        -orig" type="Torig">
+                                        -CST">
+                                        -modBC">
+                                        -vBC" type="TDec_1302">
+                                        -pICMS" type="TDec_0302">
+                                        -vICMS" type="TDec_1302">
+                                  -ICMS10">
+                                        -orig" type="Torig">
+                                        -CST">
+                                        -modBC">
+                                        -vBC" type="TDec_1302">
+                                        -pICMS" type="TDec_0302">
+                                        -vICMS" type="TDec_1302">
+                                        -modBCST">
+                                        -pMVAST" type="TDec_0302Opc" minOccurs="0">
+                                        -pRedBCST" type="TDec_0302Opc" minOccurs="0">
+                                        -vBCST" type="TDec_1302">
+                                        -pICMSST" type="TDec_0302">
+                                        -vICMSST" type="TDec_1302">
+                                  -ICMS20">
+                                        -orig" type="Torig">
+                                        -CST">
+                                        -modBC">
+                                        -pRedBC" type="TDec_0302">
+                                        -vBC" type="TDec_1302">
+                                        -pICMS" type="TDec_0302">
+                                        -vICMS" type="TDec_1302">
+                                  -ICMS30">
+                                        -orig" type="Torig">
+                                        -CST">
+                                        -modBCST">
+                                        -pMVAST" type="TDec_0302Opc" minOccurs="0">
+                                        -pRedBCST" type="TDec_0302Opc" minOccurs="0">
+                                        -vBCST" type="TDec_1302">
+                                        -pICMSST" type="TDec_0302">
+                                        -vICMSST" type="TDec_1302">
+                                  -ICMS40">
+                                        -orig" type="Torig">
+                                        -CST">
+                                          -vICMS" type="TDec_1302">
+                                          -motDesICMS">
+                                  -ICMS51">
+                                        -orig" type="Torig">
+                                        -CST">
+                                        -modBC" minOccurs="0">
+                                        -pRedBC" type="TDec_0302" minOccurs="0">
+                                        -vBC" type="TDec_1302" minOccurs="0">
+                                        -pICMS" type="TDec_0302" minOccurs="0">
+                                        -vICMS" type="TDec_1302" minOccurs="0">
+                                  -ICMS60">
+                                        -orig" type="Torig">
+                                        -CST">
+                                        -vBCSTRet" type="TDec_1302">
+                                        -vICMSSTRet" type="TDec_1302">
+                                  -ICMS70">
+                                        -orig" type="Torig">
+                                        -CST">
+                                        -modBC">
+                                        -pRedBC" type="TDec_0302">
+                                        -vBC" type="TDec_1302">
+                                        -pICMS" type="TDec_0302">
+                                        -vICMS" type="TDec_1302">
+                                        -modBCST">
+                                        -pMVAST" type="TDec_0302Opc" minOccurs="0">
+                                        -pRedBCST" type="TDec_0302Opc" minOccurs="0">
+                                        -vBCST" type="TDec_1302">
+                                        -pICMSST" type="TDec_0302">
+                                        -vICMSST" type="TDec_1302">
+                                  -ICMS90">
+                                        -orig" type="Torig">
+                                        -CST">
+                                          -modBC">
+                                          -vBC" type="TDec_1302">
+                                          -pRedBC" type="TDec_0302Opc" minOccurs="0">
+                                          -pICMS" type="TDec_0302">
+                                          -vICMS" type="TDec_1302">
+                                          -modBCST">
+                                          -pMVAST" type="TDec_0302Opc" minOccurs="0">
+                                          -pRedBCST" type="TDec_0302Opc" minOccurs="0">
+                                          -vBCST" type="TDec_1302">
+                                          -pICMSST" type="TDec_0302">
+                                          -vICMSST" type="TDec_1302">
+                                  -ICMSPart">
+                                        -orig" type="Torig">
+                                              (v2.0)
+                                        -CST">
+                                        -modBC">
+                                        -vBC" type="TDec_1302">
+                                        -pRedBC" type="TDec_0302Opc" minOccurs="0">
+                                        -pICMS" type="TDec_0302">
+                                        -vICMS" type="TDec_1302">
+                                        -modBCST">
+                                        -pMVAST" type="TDec_0302Opc" minOccurs="0">
+                                        -pRedBCST" type="TDec_0302Opc" minOccurs="0">
+                                        -vBCST" type="TDec_1302">
+                                        -pICMSST" type="TDec_0302">
+                                        -vICMSST" type="TDec_1302">
+                                        -pBCOp" type="TDec_0302Opc">
+                                        -UFST" type="TUf">
+                                              (v2.0)
+                                  -ICMSST">
+                                        -orig" type="Torig">
+                                              (v2.0)
+                                        -CST">
+                                        -vBCSTRet" type="TDec_1302">
+                                              (v2.0)
+                                        -vICMSSTRet" type="TDec_1302">
+                                              (iv2.0))
+                                        -vBCSTDest" type="TDec_1302">
+                                        -vICMSSTDest" type="TDec_1302">
+                                  -ICMSSN101">
+                                        -orig" type="Torig">
+                                              (v2.0)
+                                        -CSOSN">
+                                        -pCredSN" type="TDec_0302">
+                                        -vCredICMSSN" type="TDec_1302">
+                                  -ICMSSN102">
+                                        -orig" type="Torig">
+                                              (v2.0)
+                                        -CSOSN">
+                                  -ICMSSN201">
+                                        -orig" type="Torig">
+                                        -CSOSN">
+                                        -modBCST">
+                                        -pMVAST" type="TDec_0302Opc" minOccurs="0">
+                                        -pRedBCST" type="TDec_0302Opc" minOccurs="0">
+                                        -vBCST" type="TDec_1302">
+                                        -pICMSST" type="TDec_0302">
+                                        -vICMSST" type="TDec_1302">
+                                        -pCredSN" type="TDec_0302">
+                                        -vCredICMSSN" type="TDec_1302">
+                                  -ICMSSN202">
+                                        (v.2.0)
+                                        -orig" type="Torig">
+                                        -CSOSN">
+                                        -modBCST">
+                                        -pMVAST" type="TDec_0302Opc" minOccurs="0">
+                                        -pRedBCST" type="TDec_0302Opc" minOccurs="0">
+                                        -vBCST" type="TDec_1302">
+                                        -pICMSST" type="TDec_0302">
+                                        -vICMSST" type="TDec_1302">
+                                  -ICMSSN500">
+                                        -orig" type="Torig">
+                                        -CSOSN">
+                                        -vBCSTRet" type="TDec_1302">
+                                        -vICMSSTRet" type="TDec_1302">
+                                  -ICMSSN900">
+                                        -orig" type="Torig">
+                                        -CSOSN">
+                                          -modBC">
+                                          -vBC" type="TDec_1302">
+                                          -pRedBC" type="TDec_0302Opc" minOccurs="0">
+                                          -pICMS" type="TDec_0302">
+                                          -vICMS" type="TDec_1302">
+                                          -modBCST">
+                                          -pMVAST" type="TDec_0302Opc" minOccurs="0">
+                                          -pRedBCST" type="TDec_0302Opc" minOccurs="0">
+                                          -vBCST" type="TDec_1302">
+                                          -pICMSST" type="TDec_0302">
+                                          -vICMSST" type="TDec_1302">
+                                          -pCredSN" type="TDec_0302">
+                                          -vCredICMSSN" type="TDec_1302">
+                            -IPI" minOccurs="0">
+                                  -clEnq" minOccurs="0">
+                                  -CNPJProd" type="TCnpj" minOccurs="0">
+                                  -cSelo" minOccurs="0">
+                                  -qSelo" minOccurs="0">
+                                  -cEnq">
+                                    -IPITrib">
+                                          -CST">
+                                              -vBC" type="TDec_1302">
+                                              -pIPI" type="TDec_0302">
+                                              -qUnid" type="TDec_1204">
+                                              -vUnid" type="TDec_1104">
+                                          -vIPI" type="TDec_1302">
+                                    -IPINT">
+                                          -CST">
+                            -II" minOccurs="0">
+                                  -vBC" type="TDec_1302">
+                                  -vDespAdu" type="TDec_1302">
+                                  -vII" type="TDec_1302">
+                                  -vIOF" type="TDec_1302">
+                          -ISSQN">
+                                -vBC" type="TDec_1302">
+                                -vAliq" type="TDec_0302">
+                                -vISSQN" type="TDec_1302">
+                                -cMunFG" type="TCodMunIBGE">
+                                -cListServ" type="TCListServ">
+                                -cSitTrib">
+                        -PIS">
+                              -PISAliq">
+                                    -CST">
+                                    -vBC" type="TDec_1302">x
+                                    -pPIS" type="TDec_0302">
+                                    -vPIS" type="TDec_1302">
+                              -PISQtde">
+                                    -CST">
+                                    -qBCProd" type="TDec_1204">
+                                    -vAliqProd" type="TDec_1104">
+                                    -vPIS" type="TDec_1302">
+                              -PISNT">
+                                    -CST">
+                              -PISOutr">
+                                    -CST">
+                                        -vBC" type="TDec_1302">
+                                        -pPIS" type="TDec_0302">
+                                        -qBCProd" type="TDec_1204">
+                                        -vAliqProd" type="TDec_1104">
+                                    -vPIS" type="TDec_1302">
+                        -PISST" minOccurs="0">
+                                  -vBC" type="TDec_1302Opc">
+                                  -pPIS" type="TDec_0302Opc">
+                                  -qBCProd" type="TDec_1204Opc">
+                                  -vAliqProd" type="TDec_1104Opc">
+                              -vPIS" type="TDec_1302Opc">
+                        -COFINS">
+                              -COFINSAliq">
+                                    -CST">x
+                                    -vBC" type="TDec_1302">
+                                    -pCOFINS" type="TDec_0302">
+                                    -vCOFINS" type="TDec_1302">
+                              -COFINSQtde">
+                                    -CST">
+                                    -qBCProd" type="TDec_1204">
+                                    -vAliqProd" type="TDec_1104">
+                                    -vCOFINS" type="TDec_1302">
+                              -COFINSNT">
+                                    -CST">
+                              -COFINSOutr">
+                                    -CST">
+                                        -vBC" type="TDec_1302">
+                                        -pCOFINS" type="TDec_0302">
+                                        -qBCProd" type="TDec_1204">
+                                        -vAliqProd" type="TDec_1104">
+                                    -vCOFINS" type="TDec_1302">
+                        -COFINSST" minOccurs="0">
+                                  -vBC" type="TDec_1302Opc">
+                                  -pCOFINS" type="TDec_0302Opc">
+                                  -qBCProd" type="TDec_1204Opc">
+                                  -vAliqProd" type="TDec_1104Opc">
+                              -vCOFINS" type="TDec_1302Opc">
+                  -infAdProd" minOccurs="0">
+
+  
   -total
+              -total">
+                <xs:annotation>
+                  <xs:documentation>Dados dos totais da NF-e</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    -ICMSTot">
+                      <xs:annotation>
+                        <xs:documentation>Totais referentes ao ICMS</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          -vBC" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>BC do ICMS</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vICMS" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor Total do ICMS</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vBCST" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>BC do ICMS ST</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vST" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor Total do ICMS ST</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vProd" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor Total dos produtos e serviços</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vFrete" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor Total do Frete</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vSeg" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor Total do Seguro</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vDesc" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor Total do Desconto</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vII" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor Total do II</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vIPI" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor Total do IPI</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vPIS" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor do PIS</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vCOFINS" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor do COFINS</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vOutro" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Outras Despesas acessórias</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vNF" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor Total da NF-e</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    -ISSQNtot" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Totais referentes ao ISSQN</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          -vServ" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor Total dos Serviços sob não-incidência ou não tributados pelo ICMS
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vBC" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Base de Cálculo do ISS</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vISS" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor Total do ISS</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vPIS" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor do PIS sobre serviços</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vCOFINS" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor do COFINS sobre serviços</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    -retTrib" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Retenção de Tributos Federais</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          -vRetPIS" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor Retido de PIS</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vRetCOFINS" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor Retido de COFINS</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vRetCSLL" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor Retido de CSLL</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vBCIRRF" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Base de Cálculo do IRRF</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vIRRF" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor Retido de IRRF</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vBCRetPrev" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Base de Cálculo da Retenção da Previdêncica Social</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vRetPrev" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor da Retenção da Previdêncica Social</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
   -transp
+              -transp">
+                <xs:annotation>
+                  <xs:documentation>Dados dos transportes da NF-e</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    -modFrete">
+                      <xs:annotation>
+                        <xs:documentation>Modalidade do frete
+                          0- Por conta do emitente;
+                          1- Por conta do destinatário/remetente;
+                          2- Por conta de terceiros;
+                          9- Sem frete (v2.0)
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:whiteSpace value="preserve"/>
+                          <xs:enumeration value="0"/>
+                          <xs:enumeration value="1"/>
+                          <xs:enumeration value="2"/>
+                          <xs:enumeration value="9"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    -transporta" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Dados do transportador</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:choice minOccurs="0">
+                            -CNPJ" type="TCnpj">
+                              <xs:annotation>
+                                <xs:documentation>CNPJ do transportador</xs:documentation>
+                              </xs:annotation>
+                            </xs:element>
+                            -CPF" type="TCpf">
+                              <xs:annotation>
+                                <xs:documentation>CPF do transportador</xs:documentation>
+                              </xs:annotation>
+                            </xs:element>
+                          </xs:choice>
+                          -xNome" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Razão Social ou nome</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="TString">
+                                <xs:maxLength value="60"/>
+                                <xs:minLength value="1"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          -IE" type="TIeDest" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Inscrição Estadual (v2.0)</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -xEnder" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Endereço completo</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="TString">
+                                <xs:minLength value="1"/>
+                                <xs:maxLength value="60"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          -xMun" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Nome do munícipio</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="TString">
+                                <xs:maxLength value="60"/>
+                                <xs:minLength value="1"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          -UF" type="TUf" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Sigla da UF</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    -retTransp" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Dados da retenção ICMS do Transporte</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          -vServ" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor do Serviço</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vBCRet" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>BC da Retenção do ICMS</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -pICMSRet" type="TDec_0302">
+                            <xs:annotation>
+                              <xs:documentation>Alíquota da Retenção</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vICMSRet" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>Valor do ICMS Retido</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -CFOP" type="TCfopTransp">
+                            <xs:annotation>
+                              <xs:documentation>Código Fiscal de Operações e Prestações // PL_006f - alterado para
+                                permitir somente CFOP de transportes
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -cMunFG" type="TCodMunIBGE">
+                            <xs:annotation>
+                              <xs:documentation>Código do Município de Ocorrência do Fato Gerador (utilizar a tabela do
+                                IBGE)
+                              </xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:choice>
+                      <xs:sequence minOccurs="0">
+                        -veicTransp" type="TVeiculo" minOccurs="0">
+                          <xs:annotation>
+                            <xs:documentation>Dados do veículo</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                        -reboque" type="TVeiculo" minOccurs="0" maxOccurs="5">
+                          <xs:annotation>
+                            <xs:documentation>Dados do reboque/Dolly (v2.0)</xs:documentation>
+                          </xs:annotation>
+                        </xs:element>
+                      </xs:sequence>
+                      -vagao" minOccurs="0">
+                        <xs:annotation>
+                          <xs:documentation>Identificação do vagão (v2.0)</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                          <xs:restriction base="TString">
+                            <xs:minLength value="1"/>
+                            <xs:maxLength value="20"/>
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                      -balsa" minOccurs="0">
+                        <xs:annotation>
+                          <xs:documentation>Identificação da balsa (v2.0)</xs:documentation>
+                        </xs:annotation>
+                        <xs:simpleType>
+                          <xs:restriction base="TString">
+                            <xs:minLength value="1"/>
+                            <xs:maxLength value="20"/>
+                          </xs:restriction>
+                        </xs:simpleType>
+                      </xs:element>
+                    </xs:choice>
+                    -vol" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Dados dos volumes</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          -qVol" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Quantidade de volumes transportados</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:whiteSpace value="preserve"/>
+                                <xs:pattern value="[0-9]{1,15}"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          -esp" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Espécie dos volumes transportados</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="TString">
+                                <xs:minLength value="1"/>
+                                <xs:maxLength value="60"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          -marca" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Marca dos volumes transportados</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="TString">
+                                <xs:minLength value="1"/>
+                                <xs:maxLength value="60"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          -nVol" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Numeração dos volumes transportados</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="TString">
+                                <xs:minLength value="1"/>
+                                <xs:maxLength value="60"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          -pesoL" type="TDec_1203" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Peso líquido (em kg)</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -pesoB" type="TDec_1203" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Peso bruto (em kg)</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -lacres" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                -nLacre">
+                                  <xs:annotation>
+                                    <xs:documentation>Número dos Lacres</xs:documentation>
+                                  </xs:annotation>
+                                  <xs:simpleType>
+                                    <xs:restriction base="TString">
+                                      <xs:minLength value="1"/>
+                                      <xs:maxLength value="60"/>
+                                    </xs:restriction>
+                                  </xs:simpleType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
   -cobr
+              -cobr" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Dados da cobrança da NF-e</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    -fat" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Dados da fatura</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          -nFat" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Número da fatura</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="TString">
+                                <xs:minLength value="1"/>
+                                <xs:maxLength value="60"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          -vOrig" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor original da fatura</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vDesc" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor do desconto da fatura</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vLiq" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor líquido da fatura</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    -dup" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Dados das duplicatas</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          -nDup" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Número da duplicata</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="TString">
+                                <xs:maxLength value="60"/>
+                                <xs:minLength value="1"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          -dVenc" type="TData" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Data de vencimento da duplicata (AAAA-MM-DD)</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                          -vDup" type="TDec_1302Opc" minOccurs="0">
+                            <xs:annotation>
+                              <xs:documentation>Valor da duplicata</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
   -infAdic
+              -infAdic" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Informações adicionais da NF-e</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    -infAdFisco" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Informações adicionais de interesse do Fisco (v2.0)</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="TString">
+                          <xs:maxLength value="2000"/>
+                          <xs:minLength value="1"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    -infCpl" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Informações complementares de interesse do Contribuinte</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="TString">
+                          <xs:maxLength value="5000"/>
+                          <xs:minLength value="1"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    -obsCont" minOccurs="0" maxOccurs="10">
+                      <xs:annotation>
+                        <xs:documentation>Campo de uso livre do contribuinte
+                          informar o nome do campo no atributo xCampo
+                          e o conteúdo do campo no xTexto
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          -xTexto">
+                            <xs:simpleType>
+                              <xs:restriction base="TString">
+                                <xs:minLength value="1"/>
+                                <xs:maxLength value="60"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="xCampo" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="TString">
+                              <xs:minLength value="1"/>
+                              <xs:maxLength value="20"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    -obsFisco" minOccurs="0" maxOccurs="10">
+                      <xs:annotation>
+                        <xs:documentation>Campo de uso exclusivo do Fisco
+                          informar o nome do campo no atributo xCampo
+                          e o conteúdo do campo no xTexto
+                        </xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          -xTexto">
+                            <xs:simpleType>
+                              <xs:restriction base="TString">
+                                <xs:minLength value="1"/>
+                                <xs:maxLength value="60"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="xCampo" use="required">
+                          <xs:simpleType>
+                            <xs:restriction base="TString">
+                              <xs:minLength value="1"/>
+                              <xs:maxLength value="20"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                    </xs:element>
+                    -procRef" minOccurs="0" maxOccurs="unbounded">
+                      <xs:annotation>
+                        <xs:documentation>Grupo de informações do processo referenciado</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          -nProc">
+                            <xs:annotation>
+                              <xs:documentation>Indentificador do processo ou ato
+                                concessório
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="TString">
+                                <xs:minLength value="1"/>
+                                <xs:maxLength value="60"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          -indProc">
+                            <xs:annotation>
+                              <xs:documentation>Origem do processo, informar com:
+                                0 - SEFAZ;
+                                1 - Justiça Federal;
+                                2 - Justiça Estadual;
+                                3 - Secex/RFB;
+                                9 - Outros
+                              </xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="xs:string">
+                                <xs:whiteSpace value="preserve"/>
+                                <xs:enumeration value="0"/>
+                                <xs:enumeration value="1"/>
+                                <xs:enumeration value="2"/>
+                                <xs:enumeration value="3"/>
+                                <xs:enumeration value="9"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
   -exporta
+              -exporta" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Informações de exportação</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    -UFEmbarq" type="TUf">
+                      <xs:annotation>
+                        <xs:documentation>Sigla da UF onde ocorrerá o embarque dos produtos</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    -xLocEmbarq">
+                      <xs:annotation>
+                        <xs:documentation>Local onde ocorrerá o embarque dos produtos</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="TString">
+                          <xs:minLength value="1"/>
+                          <xs:maxLength value="60"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
   -compra
+              -compra" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Informações de compras (Nota de Empenho, Pedido e Contrato)</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    -xNEmp" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Informação da Nota de Empenho de compras públicas</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="TString">
+                          <xs:minLength value="1"/>
+                          <xs:maxLength value="17"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    -xPed" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Informação do pedido</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="TString">
+                          <xs:minLength value="1"/>
+                          <xs:maxLength value="60"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    -xCont" minOccurs="0">
+                      <xs:annotation>
+                        <xs:documentation>Informação do contrato</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="TString">
+                          <xs:minLength value="1"/>
+                          <xs:maxLength value="60"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
   -cana
+              -cana" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Informações de registro aquisições de cana // v2.0</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    -safra">
+                      <xs:annotation>
+                        <xs:documentation>Identificação da safra // v2.0</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="TString">
+                          <xs:minLength value="4"/>
+                          <xs:maxLength value="9"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    -ref">
+                      <xs:annotation>
+                        <xs:documentation>Mês e Ano de Referência, formato: MM/AAAA // 2.0</xs:documentation>
+                      </xs:annotation>
+                      <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                          <xs:whiteSpace value="preserve"/>
+                          <xs:pattern value="(0[1-9]|1[0-2])([/][2][0-9][0-9][0-9])"/>
+                        </xs:restriction>
+                      </xs:simpleType>
+                    </xs:element>
+                    -forDia" maxOccurs="31">
+                      <xs:annotation>
+                        <xs:documentation>Fornecimentos diários // v2.0</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          -qtde" type="TDec_1110">
+                            <xs:annotation>
+                              <xs:documentation>Quantidade em quilogramas - peso líquido // v2.0</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="dia" use="required">
+                          <xs:annotation>
+                            <xs:documentation>Número do dia // v2.0</xs:documentation>
+                          </xs:annotation>
+                          <xs:simpleType>
+                            <xs:restriction base="xs:string">
+                              <xs:whiteSpace value="preserve"/>
+                              <xs:pattern value="[1-9]|[1][0-9]|[2][0-9]|[3][0-1]?"/>
+                            </xs:restriction>
+                          </xs:simpleType>
+                        </xs:attribute>
+                      </xs:complexType>
+                      <xs:unique name="pk_Dia">
+                        <xs:selector xpath="./*"/>
+                        <xs:field xpath="@dia"/>
+                      </xs:unique>
+                    </xs:element>
+                    -qTotMes" type="TDec_1110">
+                      <xs:annotation>
+                        <xs:documentation>Total do mês // v2.0</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    -qTotAnt" type="TDec_1110">
+                      <xs:annotation>
+                        <xs:documentation>Total Anterior // v2.0</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    -qTotGer" type="TDec_1110">
+                      <xs:annotation>
+                        <xs:documentation>Total Geral // v2.0</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    -deduc" minOccurs="0" maxOccurs="10">
+                      <xs:annotation>
+                        <xs:documentation>Deduções - Taxas e Contribuições // v2.0</xs:documentation>
+                      </xs:annotation>
+                      <xs:complexType>
+                        <xs:sequence>
+                          -xDed">
+                            <xs:annotation>
+                              <xs:documentation>Descrição da Dedução // v2.0</xs:documentation>
+                            </xs:annotation>
+                            <xs:simpleType>
+                              <xs:restriction base="TString">
+                                <xs:minLength value="1"/>
+                                <xs:maxLength value="60"/>
+                              </xs:restriction>
+                            </xs:simpleType>
+                          </xs:element>
+                          -vDed" type="TDec_1302">
+                            <xs:annotation>
+                              <xs:documentation>valor da dedução // v2.0</xs:documentation>
+                            </xs:annotation>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    -vFor" type="TDec_1302">
+                      <xs:annotation>
+                        <xs:documentation>Valor dos fornecimentos // v2.0</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    -vTotDed" type="TDec_1302">
+                      <xs:annotation>
+                        <xs:documentation>Valor Total das Deduções // v2.0</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                    -vLiqFor" type="TDec_1302">
+                      <xs:annotation>
+                        <xs:documentation>Valor Líquido dos fornecimentos // v2.0</xs:documentation>
+                      </xs:annotation>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+
   -Id
   -ds:Signature
 
@@ -21,17 +1245,10 @@
 -TProtNFe
  -infProt">
   -tpAmb" type="TAmb">
-               <xs:documentation>Identificação do Ambiente:
-                 1 - Produção
-                 2 - Homologação
-               </xs:documentation>
   -verAplic" type="TVerAplic">
   -chNFe" type="TChNFe">
   -dhRecbto" type="xs:dateTime">
   -nProt" type="TProt" minOccurs="0">
-               <xs:documentation>Número do Protocolo de Status da NF-e. 1 posição (1 – Secretaria de Fazenda Estadual 2
-                 – Receita Federal); 2 - códiga da UF - 2 posições ano; 10 seqüencial no ano.
-               </xs:documentation>
   -"digVal" type="ds:DigestValueType" minOccurs="0">
   -cStat" type="TStat">
   -xMotivo" type="TMotivo">
@@ -61,454 +1278,67 @@
   -tpAmb" type="TAmb">
   -nRec" type="TRec"
   -versao" type="TVerNFe" use="required"/>
-
-    <xs:complexType name="TRetConsReciNFe">
-      <xs:annotation>
-        <xs:documentation>Tipo Retorno do Pedido de Consulta do Recido do Lote de Notas Fiscais Eletrônicas
-        </xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-        <xs:element name="tpAmb" type="TAmb">
-          <xs:annotation>
-            <xs:documentation>Identificação do Ambiente:
-              1 - Produção
-              2 - Homologação
-            </xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="verAplic" type="TVerAplic">
-          <xs:annotation>
-            <xs:documentation>Versão do Aplicativo que processou a NF-e</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="nRec" type="TRec">
-          <xs:annotation>
-            <xs:documentation>Número do Recibo Consultado</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="cStat" type="TStat">
-          <xs:annotation>
-            <xs:documentation>Código do status da mensagem enviada.</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="xMotivo" type="TMotivo">
-          <xs:annotation>
-            <xs:documentation>Descrição literal do status do serviço solicitado.</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="cUF" type="TCodUfIBGE">
-          <xs:annotation>
-            <xs:documentation>código da UF de atendimento</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:sequence minOccurs="0">
-          <xs:element name="cMsg">
-            <xs:annotation>
-              <xs:documentation>Código da Mensagem (v2.0)
-                Campo de uso da SEFAZ para enviar mensagem de interesse da SEFAZ para o emissor.
-              </xs:documentation>
-            </xs:annotation>
-            <xs:simpleType>
-              <xs:restriction base="xs:string">
-                <xs:whiteSpace value="preserve"/>
-                <xs:pattern value="[0-9]{4}"/>
-              </xs:restriction>
-            </xs:simpleType>
-          </xs:element>
-          <xs:element name="xMsg">
-            <xs:annotation>
-              <xs:documentation>Mensagem da SEFAZ para o emissor. (v2.0)</xs:documentation>
-            </xs:annotation>
-            <xs:simpleType>
-              <xs:restriction base="TString">
-                <xs:minLength value="1"/>
-                <xs:maxLength value="200"/>
-              </xs:restriction>
-            </xs:simpleType>
-          </xs:element>
-        </xs:sequence>
-        <xs:element name="protNFe" type="TProtNFe" minOccurs="0" maxOccurs="50">
-          <xs:annotation>
-            <xs:documentation>Protocolo de status resultado do processamento da NF-e</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-      </xs:sequence>
-      <xs:attribute name="versao" type="TVerNFe" use="required"/>
-    </xs:complexType>
+        -tpAmb" type="TAmb">
+        -verAplic" type="TVerAplic">
+        -nRec" type="TRec">
+        -cStat" type="TStat">
+        -xMotivo" type="TMotivo">
+        -cUF" type="TCodUfIBGE">
+        -cMsg">
+        -xMsg">
+        -protNFe" type="TProtNFe" minOccurs="0" maxOccurs="50">
 
 
 
-  <xs:complexType name="TNfeProc">
-    <xs:annotation>
-      <xs:documentation>Tipo da NF-e processada</xs:documentation>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="NFe" type="TNFe"/>
-      <xs:element name="protNFe" type="TProtNFe"/>
-    </xs:sequence>
-    <xs:attribute name="versao" type="TVerNFe" use="required"/>
-  </xs:complexType>
+  -TNfeProc">
+      -NFe" type="TNFe"/>
+      -protNFe" type="TProtNFe"/>
 
 
 
-  <xs:complexType name="TEndereco">
-    <xs:annotation>
-      <xs:documentation>Tipo Dados do Endereço // 24/10/08 - tamanho mínimo</xs:documentation>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="xLgr">
-        <xs:annotation>
-          <xs:documentation>Logradouro</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="2"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="nro">
-        <xs:annotation>
-          <xs:documentation>Número</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="1"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="xCpl" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Complemento</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="1"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="xBairro">
-        <xs:annotation>
-          <xs:documentation>Bairro</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="1"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="cMun" type="TCodMunIBGE">
-        <xs:annotation>
-          <xs:documentation>Código do município (utilizar a tabela do IBGE), informar 9999999 para operações com o
-            exterior.
-          </xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="xMun">
-        <xs:annotation>
-          <xs:documentation>Nome do município, informar EXTERIOR para operações com o exterior.</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="2"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="UF" type="TUf">
-        <xs:annotation>
-          <xs:documentation>Sigla da UF, informar EX para operações com o exterior.</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="CEP" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>CEP</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:whiteSpace value="preserve"/>
-            <xs:pattern value="[0-9]{8}"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="cPais" type="Tpais" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Código do país</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="xPais" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Nome do país</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="2"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="fone" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Telefone, preencher com Código DDD + número do telefone , nas operações com exterior é
-            permtido informar o código do país + código da localidade + número do telefone
-          </xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:whiteSpace value="preserve"/>
-            <xs:pattern value="[0-9]{6,14}"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
+  -TEndereco">
+      -xLgr">
+      -nro">
+      -xCpl" minOccurs="0">
+      -xBairro">
+      -cMun" type="TCodMunIBGE">
+      -xMun">
+      -UF" type="TUf">
+      -CEP" minOccurs="0">
+      -cPais" type="Tpais" minOccurs="0">
+      -xPais" minOccurs="0">
+      -fone" minOccurs="0">
 
 
 
-  <xs:complexType name="TEnderEmi">
-    <xs:annotation>
-      <xs:documentation>Tipo Dados do Endereço do Emitente // 24/10/08 - desmembrado / tamanho mínimo</xs:documentation>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="xLgr">
-        <xs:annotation>
-          <xs:documentation>Logradouro</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="2"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="nro">
-        <xs:annotation>
-          <xs:documentation>Número</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="1"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="xCpl" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Complemento</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="1"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="xBairro">
-        <xs:annotation>
-          <xs:documentation>Bairro</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="2"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="cMun" type="TCodMunIBGE">
-        <xs:annotation>
-          <xs:documentation>Código do município (utilizar a tabela do IBGE), informar 9999999 para operações com o
-            exterior.
-          </xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="xMun">
-        <xs:annotation>
-          <xs:documentation>Nome do município, informar EXTERIOR para operações com o exterior.</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="2"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="UF" type="TUfEmi">
-        <xs:annotation>
-          <xs:documentation>Sigla da UF</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="CEP" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>CEP</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:whiteSpace value="preserve"/>
-            <xs:pattern value="[0-9]{8}"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="cPais" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Código do país</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:enumeration value="1058"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="xPais" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Nome do país</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:enumeration value="Brasil"/>
-            <xs:enumeration value="BRASIL"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="fone" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Preencher com Código DDD + número do telefone (v.2.0)</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:whiteSpace value="preserve"/>
-            <xs:pattern value="[0-9]{6,14}"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
+  -TEnderEmi">
+      -xLgr">
+      -nro">
+      -xCpl" minOccurs="0">
+      -xBairro">
+      -cMun" type="TCodMunIBGE">
+      -xMun">
+      -UF" type="TUfEmi">
+      -CEP" minOccurs="0">
+      -cPais" minOccurs="0">
+      -xPais" minOccurs="0">
+      -fone" minOccurs="0">
 
-
-
-  <xs:complexType name="TLocal">
-    <xs:annotation>
-      <xs:documentation>Tipo Dados do Local de Retirada ou Entrega // 24/10/08 - tamanho mínimo // v2.0
-      </xs:documentation>
-    </xs:annotation>
+  -TLocal">
     <xs:sequence>
       <xs:choice>
-        <xs:element name="CNPJ" type="TCnpjOpc">
-          <xs:annotation>
-            <xs:documentation>CNPJ</xs:documentation>
-          </xs:annotation>
-        </xs:element>
-        <xs:element name="CPF" type="TCpf">
-          <xs:annotation>
-            <xs:documentation>CPF (v2.0)</xs:documentation>
-          </xs:annotation>
-        </xs:element>
+        -CNPJ" type="TCnpjOpc">
+        -CPF" type="TCpf">
       </xs:choice>
-      <xs:element name="xLgr">
-        <xs:annotation>
-          <xs:documentation>Logradouro</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="2"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="nro">
-        <xs:annotation>
-          <xs:documentation>Número</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="1"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="xCpl" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Complemento</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="1"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="xBairro">
-        <xs:annotation>
-          <xs:documentation>Bairro</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="1"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="cMun" type="TCodMunIBGE">
-        <xs:annotation>
-          <xs:documentation>Código do município (utilizar a tabela do IBGE)</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="xMun">
-        <xs:annotation>
-          <xs:documentation>Nome do município</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:maxLength value="60"/>
-            <xs:minLength value="2"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="UF" type="TUf">
-        <xs:annotation>
-          <xs:documentation>Sigla da UF</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
+      -xLgr">
+      -nro">
+      -xCpl" minOccurs="0">
+      -xBairro">
+      -cMun" type="TCodMunIBGE">
+      -xMun">
+      -UF" type="TUf">
 
-
-
-  <xs:complexType name="TVeiculo">
-    <xs:annotation>
-      <xs:documentation>Tipo Dados do Veículo</xs:documentation>
-    </xs:annotation>
-    <xs:sequence>
-      <xs:element name="placa">
-        <xs:annotation>
-          <xs:documentation>Placa do veículo</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:minLength value="1"/>
-            <xs:maxLength value="8"/>
-            <xs:whiteSpace value="preserve"/>
-            <xs:pattern value="[A-Z0-9]+"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="UF" type="TUf">
-        <xs:annotation>
-          <xs:documentation>Sigla da UF</xs:documentation>
-        </xs:annotation>
-      </xs:element>
-      <xs:element name="RNTC" minOccurs="0">
-        <xs:annotation>
-          <xs:documentation>Registro Nacional de Transportador de Carga (ANTT)</xs:documentation>
-        </xs:annotation>
-        <xs:simpleType>
-          <xs:restriction base="TString">
-            <xs:minLength value="1"/>
-            <xs:maxLength value="20"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-    </xs:sequence>
-  </xs:complexType>
+  -TVeiculo">
+      -placa">
+      -UF" type="TUf">
+      -RNTC" minOccurs="0">
