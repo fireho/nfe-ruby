@@ -1,51 +1,5 @@
--TNFE
- -infNFe
-  -ide
-    -cUF" type="TCodUfIBGE">
-    -cNF">
-    -natOp">
-    -indPag">
-    -mod" type="TMod">
-    -serie" type="TSerie">
-    -nNF" type="TNF">
-    -dEmi" type="TData">
-    -dSaiEnt" type="TData" minOccurs="0">
-    -hSaiEnt" type="TTime" minOccurs="0">
-    -tpNF">
-    -cMunFG" type="TCodMunIBGE">
-    -NFref" minOccurs="0" maxOccurs="unbounded">
-          -refNFe" type="TChNFe">
-          -refNF">
-                -cUF" type="TCodUfIBGE">
-                -AAMM">
-                -CNPJ" type="TCnpj">
-                -mod">
-                -serie" type="TSerie">
-                -nNF" type="TNF">
-          -refNFP">
-                -cUF" type="TCodUfIBGE">
-                -AAMM">
-                  -CNPJ" type="TCnpj">
-                  -CPF" type="TCpf">
-                -IE" type="TIeDest">
-                -mod">
-                -serie" type="TSerie">
-                -nNF" type="TNF">
-          -refCTe" type="TChNFe">
-          -refECF">
-                -mod">
-                -nECF">
-                -nCOO">
-    -tpImp">
-    -tpEmis">
-    -cDV">
-    -tpAmb" type="TAmb">
-    -finNFe" type="TFinNFe">
-    -procEmi" type="TProcEmi">
-    -verProc">
-      -dhCont">
-      -xJust">
 
+#TODO emit
   -emit
                       <xs:choice>
                         -CNPJ" type="TCnpj">
@@ -59,7 +13,7 @@
                         -IM">
                         -CNAE">
                       -CRT">
-
+#TODO avuls
   -avulsa
               -avulsa" minOccurs="0">
                     -CNPJ" type="TCnpj">
@@ -74,7 +28,7 @@
                     -repEmi">
                     -dPag" type="TData" minOccurs="0">
 
-
+#TODO dest
   -dest
                     <xs:choice>
                       -CNPJ" type="TCnpjOpc">
@@ -85,13 +39,14 @@
                     -IE" type="TIeDest">
                     -ISUF" minOccurs="0">
                     -email" minOccurs="0">
-
+                    
+#TODO retirada
   -retirada
               -retirada" type="TLocal" minOccurs="0">
-
+#TODO entrega
   -entrega
               -entrega" type="TLocal" minOccurs="0">
-
+#TODO det
   -det
             -det" maxOccurs="990">
                   -prod">
@@ -419,7 +374,7 @@
                               -vCOFINS" type="TDec_1302Opc">
                   -infAdProd" minOccurs="0">
 
-  
+#TODO total
   -total
               -total">
                 <xs:annotation>
@@ -588,7 +543,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-
+#todo transp
   -transp
               -transp">
                 <xs:annotation>
@@ -841,7 +796,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-
+#todo cobr
   -cobr
               -cobr" minOccurs="0">
                 <xs:annotation>
@@ -917,7 +872,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-
+#todo infAdic
   -infAdic
               -infAdic" minOccurs="0">
                 <xs:annotation>
@@ -1049,7 +1004,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-
+#TODO exporta
   -exporta
               -exporta" minOccurs="0">
                 <xs:annotation>
@@ -1076,7 +1031,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-
+#TODO compra
   -compra
               -compra" minOccurs="0">
                 <xs:annotation>
@@ -1120,7 +1075,7 @@
                   </xs:sequence>
                 </xs:complexType>
               </xs:element>
-
+#TODO cana
   -cana
               -cana" minOccurs="0">
                 <xs:annotation>
@@ -1241,7 +1196,7 @@
   -Id
   -ds:Signature
 
-
+#TODO 1 TProtNFe
 -TProtNFe
  -infProt">
   -tpAmb" type="TAmb">
@@ -1255,13 +1210,13 @@
   -Id" type="xs:ID" use="optional"/>
   -versao" type="TVerNFe" use="required"/>
 
-
+#TODO 1 TEnviNFe
 -TEnviNFe
   -idLote" type="TIdLote"/>
   -NFe" type="TNFe" maxOccurs="50"/>
   -versao" type="TVerNFe" use="required"/>
 
-
+#TODO 1 TRetEnviNFe
 -TRetEnviNFe
   -tpAmb" type="TAmb">
   -verAplic" type="TVerAplic">
@@ -1274,6 +1229,7 @@
       -tMed" type="TMed">
   -versao type="TVerNFe" use="required"/>
 
+#TODO 1 TConsReciNFe
 -TConsReciNFe">
   -tpAmb" type="TAmb">
   -nRec" type="TRec"
@@ -1289,13 +1245,13 @@
         -protNFe" type="TProtNFe" minOccurs="0" maxOccurs="50">
 
 
-
+#TODO 1 TNfeProc
   -TNfeProc">
       -NFe" type="TNFe"/>
       -protNFe" type="TProtNFe"/>
 
 
-
+#FIXME 1 TEndereco é igual ao emitente, eu fiz emitente, inverter e herdar
   -TEndereco">
       -xLgr">
       -nro">
@@ -1324,6 +1280,7 @@
       -xPais" minOccurs="0">
       -fone" minOccurs="0">
 
+#TODO 1 Tlocal
   -TLocal">
     <xs:sequence>
       <xs:choice>
@@ -1338,6 +1295,7 @@
       -xMun">
       -UF" type="TUf">
 
+#TODO 1 TVeiculo
   -TVeiculo">
       -placa">
       -UF" type="TUf">

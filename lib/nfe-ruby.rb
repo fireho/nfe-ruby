@@ -13,11 +13,10 @@ require 'entidades/nota_fiscal'
 require 'entidades/produto'
 require 'entidades/produto_icms'
 require 'entidades/transportadora'
+require 'entidades/endereco_emitente'
 
-cliente = Cliente.new
-emitente = Emitente.new
+x = EnderecoEmitente.new
 
-#puts cliente.methods.sort
 puts
-puts cliente.to_xml
+puts x.to_xml
 puts
